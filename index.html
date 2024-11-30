@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="stytle.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="big">
+        <div class="currentApplication">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <br><br>
+            <label class="labAge" for="age">Age </label>
+            <input type="text" id="age">
+            <br><br>
+            <button class="add" onclick="addNameAge()">Add</button>
+        </div>
+    </div>
+    <div class="biginformation">
+        <div class="informationapp">
+           
+           <div class="labelinput">
+            <div class="divlabel">
+                <label for="gender">Gender</label>
+                <label for="bloodtype">Blood Type</label>
+                <label for="allergies">Allergies</label>
+                <label for="diseases">Diseases</label>
+                <label for="height">Height</label>
+                <label for="weight">Weight</label>
+                <label for="Patientid">Patient Id</label>
+                <label for="lastvisit">Last visit</label>
+                
+            </div>
+            <div class="divinput">
+                <input type="text" id="gender">
+                <input type="text" id="bloodtype">
+                <input type="text" id="allergies">
+                <input type="text" id="diseases">
+                <input type="text" id="weight">
+                <input type="text" id="height">
+                <input type="text" id="Patientid">
+                <input type="text" id="lastvisit">
+            </div> 
+        </div>
+        <button onclick="addinformation()">Add Information</button>          
+    </div>
+    </div>
+    <div class="bigheartTemG">
+        <div class="heartTemGh5">
+            <div class="heartTemGph5">
+                <h5 >Heart rate</h5>
+                <h5>Body Temperature</h5>
+                <h5>Glocose</h5>
+            </div>
+            <div class="heartTemGinp">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+        
+        </div>
+        
+    </div>
+    <div class="leftnav">
+        <span class="material-icons">control_point</span>
+        <span class="material-icons">grid_view</span>
+        <span class="material-icons">people_outline</span>
+        <span class="material-icons">monitor_heart</span>
+        <span class="material-icons">article</span>
+        <span class="material-icons">calendar_today</span>
+        <span class="material-icons">folder</span>
+    </div>
+    </div>   
+    <div class="right">
+        
+        <div class="top dark light">
+            <div class="row1 ">
+                <div class="lef ">
+                    <span class="material-icons">keyboard_backspace</span>
+                    <p>Back to date board</p>
+                </div>
+                <div class="rite">
+                    <div onclick="move()" class="toggleContainer ">
+                        <span class="ball" ></span>
+                    </div>
+                    <div class="picdr">
+                        <img src="assets/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png" >
+                        <P> Dr. Alex Hess</P>
+                    </div>
+                </div>
+            </div>
+        </div> 
+       
+        <div class="leftcoulmn">
+           <div class="leftLef">
+            <div class="leftpic ">
+                <h3 >Current Appointment</h3>
+               <div class="pic">
+                    <input type="file" id="inp">
+                    <label class="labpic" for="inp"></label>
+                    <p class="nameapp">Name:</p>
+                    <p class="ageapp">Age:</p>
+                    <button class="uploadfile" onclick="uploadfile()">Upload</button>
+                </div>
+              
+            </div>
+            <div onclick="information()" class="information ">
+                <h4>Informaton</h4>
+                
+
+
+                <div>
+                    <span>Gender:</span>
+                    <p class="pgender"></p>
+                </div>
+                <div>
+                    <span>Blood Type:</span>
+                    <p class="pblood"></p>
+                </div>
+                <div>
+                    <span>Allergies:</span>
+                    <p class="pallergies"></p>
+                </div>
+                <div>
+                    <span>Diseases:</span>
+                    <p class="pdiseases"></p>
+                </div>
+                <div>
+                    <span>Height:</span>
+                    <p class="pheight"></p>
+                </div>
+                <div>
+                    <span>Weight:</span>
+                    <p class="pweight"></p>
+                </div>
+                <div>
+                    <span>Patient ID:</span>
+                    <p class="ppatientID"></p>
+                </div>
+                <div>
+                    <span >Last visit:</span>
+                    <p class="plastvisit"></p>
+                </div>
+            </div>
+           </div>
+            <div class="leftrit">
+                <div onclick="part1()" class="part1">
+                    <div class="part1_1 part">
+                        <img src="assets/heart (2).png" >
+                        <p>Heart Rate</p>
+                        <h4><p>bpm</p></h4>
+                    </div>
+                    <div class="part1_2 part">
+                        <img src="assets/thermometer.png" >
+                        <p>Body Temperature</p>
+                        <h4><p>c</p></h4>
+                    </div>
+                    <div class="part1.3 part">
+                        <img src="assets/blood-test.png" >
+                        <p>Glucose</p>
+                        <h4><p>mg/dl</p></h4>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </div>   
+
+</body>
+</html>
